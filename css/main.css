@@ -1,0 +1,79 @@
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.about {
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 24px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;     /*2ตัว= ตั้ง-นอน*/ /*4ตัว= บน-ขวา-ล่าง-ซ้าย*/
+}
+
+.picture {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 40px;    /*ระยะห่างด้านล่างรูป*/
+    border-radius: 50%;
+    object-fit: cover;      /*กรณีรูปไม่เป็น square*/
+    box-shadow: 10px 8px 5px grey;  /*แนวขวาง-แนวตั้ง-เบลอ-สี*/
+}
+
+.content {
+    max-width: 500px;
+}
+
+.container {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),  /*ไล่สีจากซ้ายไปยังขวา*/
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;     /*พื้นหลังเต็มหน้าจอ*/
+    background-position: bottom;
+    min-height: 100vh;          /*กำหนดความสูงขั้นต่ำ => 100vh = เต็ม100%ของทั้งหน้ากระดาษ*/
+    padding: 128px;
+}
+
+.contact {
+    margin-bottom: 48px;
+}
+
+.contact-item {
+    margin-bottom: 5px;
+}
+
+.contact-icon {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.job {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.name {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/*ปรับ Responsive*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 30px;
+    }
+}
